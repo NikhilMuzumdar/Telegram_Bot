@@ -9,7 +9,7 @@ import pytz
 import pyshorteners
 
 # below webdriver initiations and configs for implementation on linux (In this case GCP virtual machine)
-# for windows, it would be something like webdriver.Chrome(executable_path=your chrome driver path and that's it)
+# for windows, use driver = webdriver.Chrome(executable_path=<your chrome driver path>)
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument("--headless")
