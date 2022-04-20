@@ -1,5 +1,9 @@
 # Telegram_Bot
 A program that scrapes websites using selenium webdriver and provides updates on telegram using PyTelegramBotAPI.
+# Program files
+1) main_r4.py
+2) scrapper_r4.py
+All other txt files are logs and sample files generated as the program runs. 
 
 This program initiates two while loops in threading:
 1) To listen for message commands and update the info when requested 
