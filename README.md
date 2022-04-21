@@ -16,5 +16,6 @@ This program initiates two while loops in threading:
 5) datetime
 6) threading
 # Implementation notes
-For a working program, you will first need to create a bot using Botfather https://core.telegram.org/bots
-Update the generated bot token in main_r4.py either as a string (unsecure) or as a environment variable. 
+  For a working program, you will first need to create a bot using Botfather https://core.telegram.org/bots
+  Update the generated bot token in main_r4.py either as a string (unsecure) or as a environment variable.
+  For scheduled messaging to work, update the chat id to which the bot has to send message. 
