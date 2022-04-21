@@ -137,57 +137,60 @@ def scheduled_messaging():
         # Below set of functions check the time and execute the mapped functions
         # Note that in most cases here, the web scrapping doesn't take place.
         # This only reads from the saved txt files thus improving response speed.
+        # To send messages, you will have to update the chat id to which the bot should reply.
+        # How to get chat id: https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id
+        # Faster way is to open a conversation with the bot on telegram web and get the 9-digit number from the url
         if check_if_to_execute(hours=wion_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.wion_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.wion_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=tech_chrunch_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.techcrunch_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.techcrunch_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=tbhp_ht_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.team_bhp_hot_threads_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.team_bhp_hot_threads_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=tbhp_news_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.team_bhp_news_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.team_bhp_news_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=finshots_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.finshots_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.finshots_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=this_day_in_past_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.this_day_in_the_past_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.this_day_in_the_past_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=culture_quotes_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.culture_quotes()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.culture_quotes()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=filmfare_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.filmfare_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.filmfare_read()), disable_web_page_preview=True)
             except:
                 pass
 
         if check_if_to_execute(hours=inshorts_hrs):
             try:
-                bot.send_message(chat_id='705535161', text=data.separator(data.inshorts_read()), disable_web_page_preview=True)
+                bot.send_message(chat_id='<Your Chat id>', text=data.separator(data.inshorts_read()), disable_web_page_preview=True)
             except:
                 pass
         # If the minute is between 45 to 46 (2 min window to allow for execution time), web scraping is executed to update the files.
